@@ -35,9 +35,6 @@ function Header() {
           <li className="navbar-list-link">
             <a className="link" href="#">Login</a>
           </li>
-          <li className="navbar-list-link">
-            <a className="link" href="#">Sign up</a>
-          </li>
         </ul>
       </nav>
     </header>

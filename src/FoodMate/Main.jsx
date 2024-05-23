@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import one from '../image/one.png'
+import two from '../image/two.png'
+import three from '../image/three.png'
+import Header from './Header'
+import Footer from './Footer'
 
 class Main extends React.Component {
   render() {
     return (
       <div>
+        <Header/>
         <div className="Beranda-Container">
           <div className="Beranda">
             <div className="Beranda-1">
@@ -49,7 +55,8 @@ class Main extends React.Component {
             <div className="Beranda-2-Main">
               <div className="Beranda-2-Main-First-Container">
                 <div className="Beranda-2-Main-First">
-                  <h1>
+                <div className="Beranda-2-Main-First-1">
+                <h1>
                     Dengan <span>Foodmate</span> kamu{" "}
                   </h1>
                   <h1>
@@ -63,6 +70,10 @@ class Main extends React.Component {
                     dengan <span>harga</span> sangat
                   </h1>
                   <h1>terjangkau</h1>
+                  </div>
+                  <div className="Beranda-2-Main-First-2">
+                  <img src={two} alt="Gambar Beranda One" width={180} height={180}/>
+                  </div>
                 </div>
               </div>
               <div className="Beranda-2-Main-Second">
@@ -72,8 +83,10 @@ class Main extends React.Component {
                     Murah <br />
                     <span>Setiap Hari!!</span>
                   </h2>
+                  <img src={two} alt="Gambar Beranda One" width={180} height={180}/>
                 </div>
                 <div className="Beranda-2-Main-Second-two">
+                  <img src={three} alt="Gambar Beranda One" width={200} height={200}/>
                   <h2>
                     <span>Diskon</span> Akan <br />
                     Selalu <span>Update</span>
@@ -100,7 +113,9 @@ class Main extends React.Component {
             </div>
           </div>
           <div className="Beranda-4-Main">
-            <div className="Beranda-4-Main-one"></div>
+            <div className="Beranda-4-Main-one">
+              <img src={one} alt="Gambar Beranda One" width={440} height={440}/>
+            </div>
             <div className="Beranda-4-Main-two">
               <h1>KINI BELAJAR TENTANG PANGAN INDONESIA JADI LEBIH MUDAH</h1>
               <ul>
@@ -125,10 +140,11 @@ class Main extends React.Component {
             </div>
             <div className="Beranda-5-Main-Input">
               <input type="text" placeholder="Tuliskan Disini..."></input>
-              <input type="submit"></input>
+              <button type="submit">submit</button>
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }
