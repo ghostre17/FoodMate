@@ -4,7 +4,9 @@ import './AdminAdd.css'
 class SideNav extends React.Component {
 
   LogOut = () => {
-    window.location.href = `/Login`
+    alert('Logout successfully')
+    sessionStorage.removeItem('user')
+    window.location.href = `/LoginAdmin`
   }
 
     render() {

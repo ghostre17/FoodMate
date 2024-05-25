@@ -5,6 +5,13 @@ import "./Index.css";
 function Header() {
   const location = useLocation();
 
+  const Logout = () =>  {
+    sessionStorage.removeItem('user')
+
+    window.location.href = '/Login'
+    alert('Logout success')
+  }
+
   return (
     <header className="header">
       <nav className="navbar">
@@ -33,7 +40,7 @@ function Header() {
         </ul>
         <ul className="navbar-list">
           <li className="navbar-list-link">
-            <a className="link" href="#">Login</a>
+            <a className="link" onClick={(Logout)} href="#">Logout</a>
           </li>
         </ul>
       </nav>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Login.css';
 
-class Login extends React.Component {
+class LoginAdmin extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -10,11 +10,6 @@ class Login extends React.Component {
             password: "",
             account: null
         };
-    }
-
-    componentDidMount() {
-        const account = JSON.parse(localStorage.getItem('account'));
-        this.setState({ account });
     }
 
     handleChange = (e) => {
@@ -25,12 +20,19 @@ class Login extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const { email, password, account } = this.state;
+        const { email, password } = this.state;
 
-        if (account && email === account.email && password === account.password) {
-            sessionStorage.setItem('user', JSON.stringify(account))
-            window.location.href = '/';
-            alert(`Login successfully as ${account.username}`);
+        const adminacc = {
+            email: "admin@gmail.com",
+            password: "admin123",
+            username: "admin"
+        }
+
+    
+        if (email === adminacc.email && password === adminacc.password) {
+            sessionStorage.setItem('user', JSON.stringify(adminacc))
+            window.location.href = '/AdminAdd';
+            alert(`Login successfully as ${adminacc.username}`);
         } else {
             alert("Invalid Username and Password");
         }
@@ -75,4 +77,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export default LoginAdmin;

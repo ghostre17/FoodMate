@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-/* Login Container */
-.Login {
+
+/* Register Container */
+.Register {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.Login-Container {
+.Register-Container {
   background-color: white;
   padding: 40px;
   border-radius: 10px;
@@ -19,26 +20,26 @@
   text-align: center;
 }
 
-.Login-Container h1 {
+.Register-Container h1 {
   margin-bottom: 30px;
   font-weight: 700;
   color: rgb(34, 38, 47);
 }
 
 /* Form Fields */
-.Login-Field {
+.Register-Field {
   margin-bottom: 20px;
   text-align: left;
 }
 
-.Login-Field label {
+.Register-Field label {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
   color: rgb(34, 38, 47);
 }
 
-.Login-Field input {
+.Register-Field input {
   width: 100%;
   padding: 10px;
   border: 1px solid rgb(104, 185, 132);
@@ -47,7 +48,7 @@
 }
 
 /* Button */
-.Login-Button {
+.Register-Button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -59,21 +60,21 @@
   transition: background-color 0.3s;
 }
 
-.Login-Button:hover {
+.Register-Button:hover {
   background-color: rgb(87, 156, 111);
 }
 
 /* Footer */
-.Login-Footer {
+.Register-Footer {
   margin-top: 20px;
 }
 
-.Login-Link {
+.Register-Link {
   color: rgb(104, 185, 132);
   text-decoration: none;
   font-weight: 600;
 }
 
-.Login-Link:hover {
+.Register-Link:hover {
   text-decoration: underline;
 }
